@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de Inputs</h1>
+    <form action="procesa.php">
+    <fieldset>
+        <legend>Datos personales</legend>
+    <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" 
+        maxlength="6" 
+        name="nombre"
+        id="nombre">
+    </p>
+    <p>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" 
+        maxlength="6" 
+        name="contraseña"
+        id="contraseña">
+    </p>
+    <p>
+        <label for="hombre">Hombre:</label>
+        <input type="radio" value="H"
+        checked id="hombre" name="genero">
+        <label for="mujer">Mujer:</label>
+        <input type="radio" value="M"
+        id="mujer" name="genero">
+    </p>
+    <p>
+        <label for="Fumador">Fumador</label>
+        <input type="checkbox" name="fumador"
+        id="fumador">
+    </p>
+</fieldset>
+<p>
+    <label for="Provincia">Provincia:</label>
+    <select name="provincia" id="provincia">
+        <option value="Ciudad Real">Ciudad Real</option>
+        <option value="Albacete">Albacete</option>
+        <option value="Guadalajara">Guadalajara</option>
+        <option value="Cuenca">Cuenca</option>
+        <option value="Toledo" selected>Toledo</option>
+    </select>
+    <label for="Observaciones">Observaciones:</label>
+    <textarea name="Observaciones" 
+    cols="10" rows="6"
+    id="Observaciones">
+    Escriba algo.. 
+    </textarea>
+    <p>
+        <label for="Color">Color:</label>
+        <input type="color" name="color"
+        id="color">
+    </p>
+    <p>
+        <label for="fecha nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha nacimiento"
+        id="fecha nacimiento">
+
+    </p>
+    <p>
+        <label for="Edad">Edad:</label>
+        <input type="number" name="Edad"
+        id="Edad" min="0" max="100">
+    </p>
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email"
+        id="email">
+    </p>
+    <p>
+        <label for="foto">Adjuntar foto:</label>
+        <input type="file" name="foto"
+        id="foto">
+    </p>
+</p>
+
+<!--Botones de envio y reset-->
+    <p>
+     <input type="submit" value="Enviar">
+     <input type="reset" 
+     value="reiniciar formulario">
+    
+    </p>
+    </form>
+</body>
+</html>
